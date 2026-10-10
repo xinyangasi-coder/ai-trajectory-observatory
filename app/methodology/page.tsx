@@ -80,8 +80,10 @@ export default function Methodology() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-3">Update Process</h2>
+        <p className="mb-3 text-gray-700">
+          <strong>Update convention:</strong> Key metrics (ECI frontier and METR time horizons) are checked at least once per month, or sooner after major model releases. If material changes appear, they are updated on the site and recorded in the Update Log.
+        </p>
         <ul className="list-disc pl-5 space-y-2 text-gray-700">
-          <li>Key metrics are reviewed at least monthly, or sooner after major model releases.</li>
           <li>Gap analysis and major interpretive judgments are revised quarterly or when material new evidence appears.</li>
           <li>Every material change is recorded in the <Link href="/updates" className="text-blue-600 hover:underline">Update Log</Link> with the date, what changed, and the reason or evidence.</li>
           <li>Placeholder values are clearly labeled until replaced by sourced data.</li>
