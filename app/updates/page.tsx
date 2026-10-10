@@ -1,7 +1,10 @@
 export default function Updates() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Update Log</h1>
+      <h1 className="text-3xl font-bold mb-2">Update Log</h1>
+      <p className="text-gray-600 mb-6">
+        Key metrics are checked at least once per month (or sooner after major releases). Material changes are recorded here with the date, what changed, and the source or reason.
+      </p>
 
       <div id="2026-10-10-charts" className="mb-6 pb-6 border-b">
         <p className="font-semibold">October 10, 2026 (charts)</p>
