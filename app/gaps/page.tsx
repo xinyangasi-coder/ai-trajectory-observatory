@@ -72,17 +72,17 @@ const evidenceCards = [
 export default function Gaps() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-2">Gaps & Signposts</h1>
+      <h1 className="text-3xl font-bold mb-2 text-amber-900">Gaps & Signposts</h1>
       <p className="text-gray-600 mb-8">
         Gaps are tracked via structured evidence cards rather than abstract percentages. Closing any single signpost does not equal AGI. Descriptions are based on publicly available information as of October 2026.
       </p>
 
       <div className="space-y-8">
         {evidenceCards.map((card) => (
-          <div key={card.name} className="p-6 border rounded-lg bg-white shadow-sm">
+          <div key={card.name} className="p-6 border border-amber-100 rounded-lg bg-white shadow-sm">
             <div className="flex justify-between items-start mb-3">
-              <h2 className="text-xl font-semibold">{card.name}</h2>
-              <span className="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              <h2 className="text-xl font-semibold text-amber-950">{card.name}</h2>
+              <span className="text-xs px-2 py-1 bg-amber-50 text-amber-800 rounded border border-amber-100">
                 Evidence: {card.evidenceStrength}
               </span>
             </div>
@@ -96,7 +96,7 @@ export default function Gaps() {
               <p><strong>Related examples:</strong> {card.relatedExamples}</p>
             </div>
 
-            <p className="text-sm text-amber-800 bg-amber-50 p-3 rounded mt-4">
+            <p className="text-sm text-amber-800 bg-amber-50 p-3 rounded mt-4 border border-amber-100">
               <strong>Limitations / open questions:</strong> {card.limitations}
             </p>
           </div>
