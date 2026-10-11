@@ -9,7 +9,7 @@ const evidenceCards = [
     evidenceStrength: "Medium-High",
     keySources: "METR Time Horizon 1.1 (last updated Sep 8, 2026)",
     linkedMetrics: "METR Time Horizon (Dashboard)",
-    relatedExamples: "Controlled software engineering tasks show clear progress; open-ended longer tasks still show elevated failure or cheating rates.",
+    relatedExamples: "Claude Opus 4.6 and early Mythos Preview reached ~12h and ~17h at 50% on the current suite. Longer tasks still show higher rates of incomplete runs or task-specific workarounds.",
     limitations: "Task suite has a practical ceiling. Cheating and reliability issues reported on longer tasks. Limited to software engineering domain.",
   },
   {
@@ -20,7 +20,7 @@ const evidenceCards = [
     evidenceStrength: "Medium",
     keySources: "Lab disclosures, third-party ML engineering agent benchmarks",
     linkedMetrics: "Related to METR Time Horizon",
-    relatedExamples: "Internal reports of models contributing to training and evaluation pipelines; few public demonstrations of end-to-end novel research autonomy.",
+    relatedExamples: "Some labs have reported models contributing to evaluation harnesses and training pipeline debugging. Public end-to-end demonstrations of novel research autonomy remain rare.",
     limitations: "Limited public quantitative data on full autonomy. Most evidence is qualitative or from controlled internal settings.",
   },
   {
@@ -31,7 +31,7 @@ const evidenceCards = [
     evidenceStrength: "Low",
     keySources: "Research literature on continual learning and catastrophic forgetting",
     linkedMetrics: "None currently strong",
-    relatedExamples: "Most progress remains in research papers rather than deployed systems.",
+    relatedExamples: "Most published systems still require full fine-tuning or retrieval-based workarounds rather than stable online accumulation of new skills.",
     limitations: "Currently lacks reliable public measurement at scale.",
   },
   {
@@ -42,7 +42,7 @@ const evidenceCards = [
     evidenceStrength: "Medium",
     keySources: "METR evaluations, agent failure-mode studies",
     linkedMetrics: "Related to METR Time Horizon",
-    relatedExamples: "Success rates drop and error accumulation increases as task length and openness grow.",
+    relatedExamples: "Agent evaluations frequently show error rates rising with task length. Some long-running deployments report higher intervention rates than short controlled benchmarks.",
     limitations: "Most rigorous evaluations remain on controlled or self-scoring tasks. Open-ended reliability is harder to measure consistently.",
   },
   {
@@ -53,7 +53,7 @@ const evidenceCards = [
     evidenceStrength: "Low-Medium",
     keySources: "Robotics benchmarks, embodied AI evaluations, real-world deployment reports",
     linkedMetrics: "None currently strong",
-    relatedExamples: "Structured lab tasks show progress; unstructured real-world success rates remain low.",
+    relatedExamples: "Structured pick-and-place or assembly tasks in labs have improved, while unstructured home or industrial tasks still show low success rates in public evaluations.",
     limitations: "Sparse public data at scale. Most results come from controlled lab environments.",
   },
   {
@@ -64,7 +64,7 @@ const evidenceCards = [
     evidenceStrength: "Medium",
     keySources: "FrontierMath, other hard benchmarks, expert evaluations of novelty",
     linkedMetrics: "Hard Unsaturated Benchmarks (Dashboard)",
-    relatedExamples: "High scores on known problem distributions; rare verified cases of genuine novelty.",
+    relatedExamples: "Models have solved some previously difficult contest-style or benchmark problems. Verified cases of generating and confirming genuinely new scientific results remain limited.",
     limitations: "Distinguishing genuine discovery from sophisticated pattern matching or memorization remains difficult.",
   },
 ];
@@ -103,10 +103,16 @@ export default function Gaps() {
         ))}
       </div>
 
-      <p className="mt-10">
-        <Link href="/dashboard" className="text-blue-600 hover:underline">View Capabilities Dashboard →</Link>
-      </p>
-      <p className="mt-2">
+      <section className="mt-10 text-sm text-gray-700">
+        <p className="mb-2">Related pages:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li><Link href="/dashboard" className="text-blue-600 hover:underline">Capabilities Dashboard</Link> — quantitative anchors</li>
+          <li><Link href="/scenarios" className="text-blue-600 hover:underline">Scenarios</Link> — longer-term forms that depend on these gaps</li>
+          <li><Link href="/bottlenecks" className="text-blue-600 hover:underline">Bottlenecks</Link> — structural constraints affecting several gaps</li>
+        </ul>
+      </section>
+
+      <p className="mt-6">
         <Link href="/" className="text-blue-600 hover:underline">← Back to homepage</Link>
       </p>
     </main>
