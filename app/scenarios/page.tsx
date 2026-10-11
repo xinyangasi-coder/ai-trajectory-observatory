@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function Scenarios() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-2">Ultimate Possibilities & Scenarios</h1>
+      <h1 className="text-3xl font-bold mb-2 text-slate-800">Ultimate Possibilities & Scenarios</h1>
       <p className="text-gray-600 mb-8">
         This page examines longer-term possible forms of AI capability using multiple scenarios rather than single-point predictions. Scenarios are linked to observable indicators where possible. All content is provisional and will be revised as new evidence appears. Current version based on publicly available information as of October 2026.
       </p>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Key Assumptions & Uncertainties</h2>
+        <h2 className="text-2xl font-semibold mb-3 text-slate-800">Key Assumptions & Uncertainties</h2>
         <p className="text-gray-700 mb-4">
           Longer-term outcomes depend on several major variables. Current evidence strength is noted where possible.
         </p>
@@ -23,14 +23,14 @@ export default function Scenarios() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Near-to-Medium Term Scenarios (to ~2030)</h2>
+        <h2 className="text-2xl font-semibold mb-3 text-slate-800">Near-to-Medium Term Scenarios (to ~2030)</h2>
         <p className="text-gray-700 mb-4">
           Illustrative scenarios. These are not forecasts. Each includes example observable indicators that could support or weaken it.
         </p>
 
         <div className="space-y-6">
-          <div className="p-5 border rounded-lg bg-white">
-            <h3 className="text-lg font-semibold mb-2">Continued Rapid Progress</h3>
+          <div className="p-5 border border-slate-200 rounded-lg bg-white">
+            <h3 className="text-lg font-semibold mb-2 text-slate-900">Continued Rapid Progress</h3>
             <p className="text-sm text-gray-700 mb-2">Capabilities continue advancing at roughly current rates. Software task horizons extend into multi-day range for some tasks, but reliability remains uneven outside controlled settings.</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
             <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
@@ -41,8 +41,8 @@ export default function Scenarios() {
             <p className="text-sm text-gray-600"><strong>Key uncertainties:</strong> Sustained algorithmic progress and manageable infrastructure constraints.</p>
           </div>
 
-          <div className="p-5 border rounded-lg bg-white">
-            <h3 className="text-lg font-semibold mb-2">Acceleration via AI-Assisted R&D</h3>
+          <div className="p-5 border border-slate-200 rounded-lg bg-white">
+            <h3 className="text-lg font-semibold mb-2 text-slate-900">Acceleration via AI-Assisted R&D</h3>
             <p className="text-sm text-gray-700 mb-2">Models become substantially more effective at automating portions of AI research and engineering, creating a positive feedback loop that accelerates capability growth.</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
             <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
@@ -53,8 +53,8 @@ export default function Scenarios() {
             <p className="text-sm text-gray-600"><strong>Key uncertainties:</strong> Degree of genuine R&D autonomy and whether gains compound or saturate.</p>
           </div>
 
-          <div className="p-5 border rounded-lg bg-white">
-            <h3 className="text-lg font-semibold mb-2">Slowdown from Physical or Economic Constraints</h3>
+          <div className="p-5 border border-slate-200 rounded-lg bg-white">
+            <h3 className="text-lg font-semibold mb-2 text-slate-900">Slowdown from Physical or Economic Constraints</h3>
             <p className="text-sm text-gray-700 mb-2">Progress continues but is materially constrained by energy, hardware supply, or diminishing economic returns, leading to slower capability gains than recent trends.</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
             <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
@@ -65,8 +65,8 @@ export default function Scenarios() {
             <p className="text-sm text-gray-600"><strong>Key uncertainties:</strong> Severity and persistence of infrastructure and capital bottlenecks.</p>
           </div>
 
-          <div className="p-5 border rounded-lg bg-white">
-            <h3 className="text-lg font-semibold mb-2">Jagged Progress with Persistent Reliability Limits</h3>
+          <div className="p-5 border border-slate-200 rounded-lg bg-white">
+            <h3 className="text-lg font-semibold mb-2 text-slate-900">Jagged Progress with Persistent Reliability Limits</h3>
             <p className="text-sm text-gray-700 mb-2">Strong gains continue on certain benchmarks and controlled tasks, while long-horizon reliability, open-ended performance, and physical-world capabilities improve more slowly.</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
             <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
@@ -80,7 +80,7 @@ export default function Scenarios() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Longer-Term Possible Forms</h2>
+        <h2 className="text-2xl font-semibold mb-3 text-slate-800">Longer-Term Possible Forms</h2>
         <p className="text-gray-700 mb-4">
           Possible capability regimes rather than dated predictions. Each depends on progress on specific current gaps.
         </p>
@@ -94,7 +94,7 @@ export default function Scenarios() {
       </section>
 
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold mb-3">Relation to Current Gaps</h2>
+        <h2 className="text-2xl font-semibold mb-3 text-slate-800">Relation to Current Gaps</h2>
         <p className="text-gray-700">
           Most longer-term forms depend on substantial progress on one or more of the gaps tracked on the <Link href="/gaps" className="text-blue-600 hover:underline">Gaps & Signposts</Link> page. Physical and infrastructure constraints relevant to several scenarios are summarized on the <Link href="/bottlenecks" className="text-blue-600 hover:underline">Bottlenecks</Link> page. Quantitative anchors remain on the <Link href="/dashboard" className="text-blue-600 hover:underline">Dashboard</Link>.
         </p>
