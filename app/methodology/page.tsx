@@ -40,6 +40,38 @@ export default function Methodology() {
       </section>
 
       <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-3">Evidence Standards</h2>
+        <p className="mb-3 text-gray-700">
+          Claims and evidence cards are labeled by strength to make quality differences explicit:
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-gray-700">
+          <li><strong>High</strong> — Multiple independent quantitative sources, clear methodology, limited known bias, and recent public data.</li>
+          <li><strong>Medium</strong> — One strong quantitative source or consistent qualitative signals from credible sources; some limitations or incomplete public data.</li>
+          <li><strong>Low</strong> — Primarily qualitative, limited public measurement, early research results, or significant known measurement gaps.</li>
+        </ul>
+        <p className="mt-3 text-sm text-gray-600">
+          Preference is given to publicly documented, reproducible evaluations over internal or unverified claims. When sources conflict, the disagreement and its possible causes are noted rather than averaged away.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-3">Multi-Perspective Analysis</h2>
+        <p className="mb-3 text-gray-700">
+          Capability progress, gaps, and longer-term possibilities are examined from multiple angles rather than a single technical lens:
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-gray-700">
+          <li><strong>Technical</strong> — Model capabilities, scaling, architectures, algorithms, and evaluation results.</li>
+          <li><strong>Economic</strong> — Cost trajectories, demand, capital requirements, and whether returns support continued investment.</li>
+          <li><strong>Physical & infrastructural</strong> — Energy, chips, memory, data centers, and supply-chain constraints.</li>
+          <li><strong>Safety & reliability</strong> — Error accumulation, alignment, evaluation gaps, and deployment failure modes.</li>
+          <li><strong>Social & organizational</strong> — Adoption speed, institutional readiness, regulation, and trust.</li>
+        </ul>
+        <p className="mt-3 text-sm text-gray-600">
+          No single perspective is treated as decisive. Where perspectives point in different directions, the tension is recorded as an open question.
+        </p>
+      </section>
+
+      <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-3">Hard Benchmark Selection Criteria</h2>
         <p className="mb-3 text-gray-700">
           Benchmarks are included only while they retain useful discriminative power. The following rules guide inclusion and exit:
