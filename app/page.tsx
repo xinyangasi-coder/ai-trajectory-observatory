@@ -107,6 +107,24 @@ export default function Home() {
       </section>
 
       <section className="mb-10">
+        <h2 className="text-xl font-semibold mb-4">How This Site Is Organized</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+          <div className="p-4 border rounded-lg">
+            <p className="font-semibold mb-1">Current Capabilities</p>
+            <p className="text-gray-600">Quantitative metrics and trends (Dashboard).</p>
+          </div>
+          <div className="p-4 border rounded-lg">
+            <p className="font-semibold mb-1">Gaps & Constraints</p>
+            <p className="text-gray-600">Observable distance to key milestones and current bottlenecks.</p>
+          </div>
+          <div className="p-4 border rounded-lg">
+            <p className="font-semibold mb-1">Longer-Term Possibilities</p>
+            <p className="text-gray-600">Multiple scenarios linked to observable indicators.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-10">
         <h2 className="text-xl font-semibold mb-4">Latest Updates</h2>
         <ul className="space-y-2 text-sm">
           <li>
