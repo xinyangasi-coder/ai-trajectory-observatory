@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-12 text-xs text-gray-500">
-        This platform revises based on evidence. English is the default language.
+        This platform revises based on evidence.
       </footer>
     </main>
   );
