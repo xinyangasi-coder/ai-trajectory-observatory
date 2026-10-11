@@ -6,6 +6,17 @@ export default function Updates() {
         Key metrics are checked at least once per month (or sooner after major releases). Material changes are recorded here with the date, what changed, and the source or reason. Monthly checks also review whether Gaps, Scenarios, and Bottlenecks pages need revision.
       </p>
 
+      <div id="2026-10-11-monthly" className="mb-6 pb-6 border-b">
+        <p className="font-semibold">October 11, 2026 — Monthly check</p>
+        <p className="mt-1">No material changes to key metrics or analysis pages since the previous check.</p>
+        <ul className="list-disc pl-5 mt-1 text-gray-700">
+          <li>ECI frontier remains 167 (Claude Opus 5.5), Epoch AI as of early October 2026.</li>
+          <li>METR Time Horizon page last updated September 8, 2026 and is no longer actively updated. Frontier remains ~17 hours at 50% (measurements above ~16 hours unreliable with current task suite).</li>
+          <li>Gaps, Scenarios, and Bottlenecks pages reviewed; no public evidence requiring immediate revision of the current evidence cards or scenario framing.</li>
+        </ul>
+        <p className="mt-1 text-sm text-gray-500">Sources: epoch.ai/benchmarks, metr.org/time-horizons/</p>
+      </div>
+
       <div id="2026-10-refactor" className="mb-6 pb-6 border-b">
         <p className="font-semibold">October 11, 2026 — Site refactor and expansion</p>
         <p className="mt-1">Completed the planned expansion of the site structure:</p>
