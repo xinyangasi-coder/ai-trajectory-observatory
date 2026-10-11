@@ -51,7 +51,7 @@ export default function Home() {
       <header className="mb-10">
         <h1 className="text-3xl font-bold text-gray-900">AI Trajectory Observatory</h1>
         <p className="mt-3 text-lg text-gray-700">
-          A transparent tracker of measured AI capabilities and gaps. Analysis of ultimate possibilities and constraints will be added in a later phase.
+          A transparent tracker of measured AI capabilities, gaps, and longer-term possibilities.
         </p>
         <p className="mt-2 text-sm">
           <Link href="/methodology" className="text-blue-600 hover:underline">
@@ -117,7 +117,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Link href="/dashboard" className="p-6 border rounded-lg hover:bg-gray-50">
           <h3 className="font-semibold">Capabilities Dashboard →</h3>
           <p className="text-sm text-gray-600 mt-1">Quantitative metrics with sources and limitations</p>
@@ -125,6 +125,10 @@ export default function Home() {
         <Link href="/gaps" className="p-6 border rounded-lg hover:bg-gray-50">
           <h3 className="font-semibold">Gaps & Signposts →</h3>
           <p className="text-sm text-gray-600 mt-1">Observable milestones versus current status</p>
+        </Link>
+        <Link href="/scenarios" className="p-6 border rounded-lg hover:bg-gray-50">
+          <h3 className="font-semibold">Scenarios →</h3>
+          <p className="text-sm text-gray-600 mt-1">Longer-term possibilities and key uncertainties</p>
         </Link>
       </section>
 
