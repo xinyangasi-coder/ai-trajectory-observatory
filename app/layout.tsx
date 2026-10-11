@@ -30,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/" className="font-semibold text-gray-900">AI Trajectory Observatory</Link>
             <Link href="/dashboard" className="text-gray-600 hover:text-gray-900">Dashboard</Link>
             <Link href="/gaps" className="text-gray-600 hover:text-gray-900">Gaps</Link>
+            <Link href="/scenarios" className="text-gray-600 hover:text-gray-900">Scenarios</Link>
             <Link href="/methodology" className="text-gray-600 hover:text-gray-900">Methodology</Link>
             <Link href="/updates" className="text-gray-600 hover:text-gray-900">Updates</Link>
           </div>
