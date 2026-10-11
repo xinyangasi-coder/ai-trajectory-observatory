@@ -3,8 +3,21 @@ export default function Updates() {
     <main className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-2">Update Log</h1>
       <p className="text-gray-600 mb-6">
-        Key metrics are checked at least once per month (or sooner after major releases). Material changes are recorded here with the date, what changed, and the source or reason.
+        Key metrics are checked at least once per month (or sooner after major releases). Material changes are recorded here with the date, what changed, and the source or reason. Monthly checks also review whether Gaps, Scenarios, and Bottlenecks pages need revision.
       </p>
+
+      <div id="2026-10-refactor" className="mb-6 pb-6 border-b">
+        <p className="font-semibold">October 11, 2026 — Site refactor and expansion</p>
+        <p className="mt-1">Completed the planned expansion of the site structure:</p>
+        <ul className="list-disc pl-5 mt-1 text-gray-700">
+          <li>Refactored Gaps page into structured evidence cards with clearer examples and cross-links.</li>
+          <li>Added Scenarios page with near-term scenarios linked to observable indicators and longer-term possible forms.</li>
+          <li>Added Bottlenecks page covering reliability, evaluation gaps, infrastructure, data/algorithmic returns, and safety-related constraints.</li>
+          <li>Updated Methodology with evidence standards and multi-perspective analysis principles.</li>
+          <li>Added three-layer structure explanation on the homepage and updated navigation.</li>
+        </ul>
+        <p className="mt-1 text-sm text-gray-500">Future monthly checks will also review these pages for needed revisions.</p>
+      </div>
 
       <div id="2026-10-monthly" className="mb-6 pb-6 border-b">
         <p className="font-semibold">October 10, 2026 — Monthly check</p>
