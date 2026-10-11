@@ -5,7 +5,7 @@ export default function Scenarios() {
     <main className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-2">Ultimate Possibilities & Scenarios</h1>
       <p className="text-gray-600 mb-8">
-        This page examines longer-term possible forms of AI capability using multiple scenarios rather than single-point predictions. All content is provisional and will be revised as new evidence appears. Current version based on publicly available information as of October 2026.
+        This page examines longer-term possible forms of AI capability using multiple scenarios rather than single-point predictions. Scenarios are linked to observable indicators where possible. All content is provisional and will be revised as new evidence appears. Current version based on publicly available information as of October 2026.
       </p>
 
       <section className="mb-10">
@@ -25,31 +25,55 @@ export default function Scenarios() {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-3">Near-to-Medium Term Scenarios (to ~2030)</h2>
         <p className="text-gray-700 mb-4">
-          Illustrative scenarios. These are not forecasts. Each will be refined with clearer links to observable indicators.
+          Illustrative scenarios. These are not forecasts. Each includes example observable indicators that could support or weaken it.
         </p>
 
         <div className="space-y-6">
           <div className="p-5 border rounded-lg bg-white">
             <h3 className="text-lg font-semibold mb-2">Continued Rapid Progress</h3>
             <p className="text-sm text-gray-700 mb-2">Capabilities continue advancing at roughly current rates. Software task horizons extend into multi-day range for some tasks, but reliability remains uneven outside controlled settings.</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
+            <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
+              <li>METR 50% time horizon continues to lengthen at a similar pace</li>
+              <li>ECI frontier trend remains roughly linear</li>
+              <li>New hard benchmarks continue to show clear gaps between leading models</li>
+            </ul>
             <p className="text-sm text-gray-600"><strong>Key uncertainties:</strong> Sustained algorithmic progress and manageable infrastructure constraints.</p>
           </div>
 
           <div className="p-5 border rounded-lg bg-white">
             <h3 className="text-lg font-semibold mb-2">Acceleration via AI-Assisted R&D</h3>
             <p className="text-sm text-gray-700 mb-2">Models become substantially more effective at automating portions of AI research and engineering, creating a positive feedback loop that accelerates capability growth.</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
+            <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
+              <li>Public or third-party evaluations show rising rates of autonomous ML engineering task completion</li>
+              <li>Lab disclosures report models contributing to a larger share of research engineering work</li>
+              <li>METR-style horizons or related agent benchmarks accelerate beyond recent trends</li>
+            </ul>
             <p className="text-sm text-gray-600"><strong>Key uncertainties:</strong> Degree of genuine R&D autonomy and whether gains compound or saturate.</p>
           </div>
 
           <div className="p-5 border rounded-lg bg-white">
             <h3 className="text-lg font-semibold mb-2">Slowdown from Physical or Economic Constraints</h3>
             <p className="text-sm text-gray-700 mb-2">Progress continues but is materially constrained by energy, hardware supply, or diminishing economic returns, leading to slower capability gains than recent trends.</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
+            <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
+              <li>Reports of delayed training runs due to power or chip availability</li>
+              <li>Slowing growth in frontier training compute or capital expenditure</li>
+              <li>Flattening or slower improvement on ECI and METR relative to 2024–2026 trends</li>
+            </ul>
             <p className="text-sm text-gray-600"><strong>Key uncertainties:</strong> Severity and persistence of infrastructure and capital bottlenecks.</p>
           </div>
 
           <div className="p-5 border rounded-lg bg-white">
             <h3 className="text-lg font-semibold mb-2">Jagged Progress with Persistent Reliability Limits</h3>
             <p className="text-sm text-gray-700 mb-2">Strong gains continue on certain benchmarks and controlled tasks, while long-horizon reliability, open-ended performance, and physical-world capabilities improve more slowly.</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Example supporting indicators:</strong></p>
+            <ul className="list-disc pl-5 text-sm text-gray-700 mb-2">
+              <li>Continued improvement on hard benchmarks and controlled software tasks</li>
+              <li>Limited progress on open-ended multi-day reliability or embodied tasks</li>
+              <li>Persistent gap between benchmark scores and real-world deployment success rates</li>
+            </ul>
             <p className="text-sm text-gray-600"><strong>Key uncertainties:</strong> Whether reliability and generalization issues are fundamental or engineering problems.</p>
           </div>
         </div>
@@ -61,21 +85,18 @@ export default function Scenarios() {
           Possible capability regimes rather than dated predictions. Each depends on progress on specific current gaps.
         </p>
         <ul className="list-disc pl-5 space-y-2 text-gray-700">
-          <li>Reliable multi-day to multi-week autonomous software agents</li>
-          <li>Systems capable of proposing and verifying genuinely novel scientific or mathematical results at scale</li>
-          <li>Broad automation of substantial portions of knowledge work and economic production</li>
-          <li>Models with robust continual learning and long-term memory</li>
-          <li>Significantly improved physical-world manipulation (or continued large gap relative to digital capabilities)</li>
+          <li><strong>Reliable multi-day to multi-week autonomous software agents</strong> — Primarily depends on Software Task Time Horizon and Long-Horizon Reliability gaps.</li>
+          <li><strong>Systems capable of proposing and verifying genuinely novel scientific or mathematical results at scale</strong> — Primarily depends on Scientific Discovery Capability gap.</li>
+          <li><strong>Broad automation of substantial portions of knowledge work</strong> — Depends on reliability, task horizon, and economic integration.</li>
+          <li><strong>Models with robust continual learning and long-term memory</strong> — Depends on Continual Learning gap.</li>
+          <li><strong>Significantly improved physical-world manipulation</strong> — Depends on Embodied / Physical World gap (or continued large gap relative to digital capabilities).</li>
         </ul>
-        <p className="mt-3 text-sm text-gray-600">
-          Detailed mapping from these forms to current gaps will be added in a later update.
-        </p>
       </section>
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-3">Relation to Current Gaps</h2>
         <p className="text-gray-700">
-          Most longer-term forms depend on substantial progress on one or more of the gaps tracked on the <Link href="/gaps" className="text-blue-600 hover:underline">Gaps & Signposts</Link> page (particularly software task horizon, long-horizon reliability, continual learning, and scientific discovery capability).
+          Most longer-term forms depend on substantial progress on one or more of the gaps tracked on the <Link href="/gaps" className="text-blue-600 hover:underline">Gaps & Signposts</Link> page. Physical and infrastructure constraints relevant to several scenarios are summarized on the <Link href="/bottlenecks" className="text-blue-600 hover:underline">Bottlenecks</Link> page. Quantitative anchors remain on the <Link href="/dashboard" className="text-blue-600 hover:underline">Dashboard</Link>.
         </p>
       </section>
 
