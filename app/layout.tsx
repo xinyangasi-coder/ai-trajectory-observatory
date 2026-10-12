@@ -37,16 +37,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-white text-gray-900">
         {/* Header */}
         <header className="border-b border-gray-200 bg-white sticky top-0 z-10">
-          <div className="max-w-5xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
-            <Link href="/" className="font-semibold text-gray-900 text-lg tracking-tight">
+          <div className="max-w-5xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+            <Link href="/" className="font-semibold text-gray-900 text-lg tracking-tight mr-6">
               AI Trajectory Observatory
             </Link>
-            <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
-              {navLinks.map((link) => (
+            <nav className="flex flex-wrap items-center">
+              {navLinks.map((link, index) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-600 hover:text-blue-700 transition-colors"
+                  className={`text-sm text-gray-600 hover:text-blue-700 transition-colors ${index < navLinks.length - 1 ? 'mr-5' : ''}`}
                 >
                   {link.label}
                 </Link>
@@ -70,12 +70,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                   Transparent tracking of measured AI capabilities, gaps, and constraints.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-                {navLinks.map((link) => (
+              <div className="flex flex-wrap">
+                {navLinks.map((link, index) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-gray-600 hover:text-blue-700"
+                    className={`text-sm text-gray-600 hover:text-blue-700 ${index < navLinks.length - 1 ? 'mr-6' : ''}`}
                   >
                     {link.label}
                   </Link>
