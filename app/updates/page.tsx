@@ -6,6 +6,12 @@ export default function Updates() {
         Key metrics are checked at least once per month (or sooner after major releases). Material changes are recorded here with the date, what changed, and the source or reason. Monthly checks also review whether Gaps, Scenarios, and Bottlenecks pages need revision.
       </p>
 
+      <div id="2026-10-12-landscape" className="mb-6 pb-6 border-b">
+        <p className="font-semibold">October 12, 2026 — Current Landscape page added</p>
+        <p className="mt-1">Added a new Current Landscape page summarizing recent progress, high-quality use cases, and emerging constraints as of mid-October 2026. Topics covered include frontier model releases, agentic systems, scientific discovery applications, and infrastructure/energy constraints. Selective details were also considered for future updates to Gaps and Bottlenecks pages.</p>
+        <p className="mt-1 text-sm text-gray-500">Based on publicly available lab announcements, evaluations, and policy developments.</p>
+      </div>
+
       <div id="2026-10-11-monthly" className="mb-6 pb-6 border-b">
         <p className="font-semibold">October 11, 2026 — Monthly check</p>
         <p className="mt-1">No material changes to key metrics or analysis pages since the previous check.</p>
