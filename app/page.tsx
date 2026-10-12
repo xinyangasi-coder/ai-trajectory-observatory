@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <div className="p-5 border border-gray-200 rounded-lg bg-white shadow-sm">
             <p className="text-xs font-medium text-gray-500 uppercase tracking-wide">Last Material Update</p>
-            <p className="text-3xl font-bold text-gray-900 mt-1">Oct 10</p>
+            <p className="text-3xl font-bold text-gray-900 mt-1">Oct 12</p>
             <AsOfSource date="2026" source="Update Log" sourceUrl="/updates" />
           </div>
         </div>
@@ -128,8 +128,8 @@ export default function Home() {
         <h2 className="text-xl font-semibold mb-4 text-gray-900">Latest Updates</h2>
         <ul className="space-y-2 text-sm">
           <li>
-            <Link href="/updates#2026-10-refactor" className="text-blue-600 hover:underline">
-              Oct 11, 2026 — Site refactor and expansion
+            <Link href="/updates#2026-10-12-landscape" className="text-blue-600 hover:underline">
+              Oct 12, 2026 — Current Landscape page added
             </Link>
           </li>
         </ul>
@@ -151,6 +151,10 @@ export default function Home() {
         <Link href="/bottlenecks" className="p-6 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
           <h3 className="font-semibold text-gray-900">Bottlenecks →</h3>
           <p className="text-sm text-gray-600 mt-1">Current structural constraints and limitations</p>
+        </Link>
+        <Link href="/landscape" className="p-6 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors col-span-1 md:col-span-2 lg:col-span-1">
+          <h3 className="font-semibold text-gray-900">Current Landscape →</h3>
+          <p className="text-sm text-gray-600 mt-1">Recent progress, use cases, and emerging constraints</p>
         </Link>
       </section>
 
