@@ -35,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Link href="/gaps" className="text-gray-600 hover:text-blue-700 transition-colors" style={{ marginRight: '1.25rem' }}>Gaps</Link>
               <Link href="/scenarios" className="text-gray-600 hover:text-blue-700 transition-colors" style={{ marginRight: '1.25rem' }}>Scenarios</Link>
               <Link href="/bottlenecks" className="text-gray-600 hover:text-blue-700 transition-colors" style={{ marginRight: '1.25rem' }}>Bottlenecks</Link>
+              <Link href="/landscape" className="text-gray-600 hover:text-blue-700 transition-colors" style={{ marginRight: '1.25rem' }}>Landscape</Link>
               <Link href="/methodology" className="text-gray-600 hover:text-blue-700 transition-colors" style={{ marginRight: '1.25rem' }}>Methodology</Link>
               <Link href="/updates" className="text-gray-600 hover:text-blue-700 transition-colors">Updates</Link>
             </div>
