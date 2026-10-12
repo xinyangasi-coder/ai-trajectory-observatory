@@ -157,10 +157,6 @@ export default function Home() {
           <p className="text-sm text-gray-600 mt-1">Recent progress, use cases, and emerging constraints</p>
         </Link>
       </section>
-
-      <footer className="mt-12 text-xs text-gray-500">
-        This platform revises based on evidence.
-      </footer>
     </main>
   );
 }
