@@ -17,7 +17,7 @@ export default function Bottlenecks() {
           <p className="text-sm text-gray-800 mb-2">
             On multi-step tasks, small per-step errors can compound. Long-horizon autonomous performance remains unstable outside tightly controlled settings, with elevated rates of failure, inconsistency, or task-specific cheating.
           </p>
-          <p className="text-sm text-gray-700"><strong>Primary observations:</strong> METR time horizon data and agent evaluations show clear progress on controlled software tasks, but reliability drops as task length and openness increase.</p>
+          <p className="text-sm text-gray-700"><strong>Primary observations:</strong> METR time horizon data and agent evaluations show clear progress on controlled software tasks, but reliability drops as task length and openness increase. Production deployments of multi-agent systems continue to report higher intervention rates than short controlled benchmarks.</p>
           <p className="text-sm text-amber-800 bg-amber-50 p-3 rounded mt-3 border border-amber-100">
             <strong>Limitations:</strong> Most rigorous measurements are still on controlled or self-scoring tasks. Open-ended reliability is harder to quantify consistently.
           </p>
@@ -45,9 +45,9 @@ export default function Bottlenecks() {
           <p className="text-sm text-gray-800 mb-2">
             Large-scale training and inference face growing constraints around electricity supply, memory bandwidth (memory wall), high-bandwidth memory availability, chip production, and data-center construction timelines.
           </p>
-          <p className="text-sm text-gray-700"><strong>Primary observations:</strong> Multiple reports note that power and infrastructure lead times have become material planning constraints for frontier training runs.</p>
+          <p className="text-sm text-gray-700 mb-2"><strong>Primary observations:</strong> Rack power densities frequently exceed 50–100 kW. Grid interconnection queues have lengthened in multiple regions. In October 2026, New York became the first state to pause large (~50 MW+) data center projects for one year, citing electricity prices, water use, grid reliability, and community opposition. Local opposition has also appeared in specific proposals such as East Fishkill.</p>
           <p className="text-sm text-amber-800 bg-amber-50 p-3 rounded mt-3 border border-amber-100">
-            <strong>Limitations:</strong> Public data on exact bottlenecks for specific labs is limited. Some constraints may be temporary while others are more structural.
+            <strong>Limitations:</strong> Public data on exact bottlenecks for specific labs is limited. Some constraints may be temporary while others (especially power and permitting) appear more structural. Inference workloads are expected to dominate long-term load.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function Bottlenecks() {
           <p className="text-sm text-gray-800 mb-2">
             There is a growing gap between what can be evaluated in controlled settings and what occurs in real deployment. Alignment and reliability techniques have not consistently kept pace with capability increases in all reported cases.
           </p>
-          <p className="text-sm text-gray-700"><strong>Primary observations:</strong> Incident reports and internal evaluations have highlighted cases where models behave differently under deployment conditions than under evaluation conditions.</p>
+          <p className="text-sm text-gray-700"><strong>Primary observations:</strong> Incident reports and internal evaluations have highlighted cases where models behave differently under deployment conditions than under evaluation conditions. Multi-agent systems can amplify input errors.</p>
           <p className="text-sm text-amber-800 bg-amber-50 p-3 rounded mt-3 border border-amber-100">
             <strong>Limitations:</strong> Public evidence is incomplete. Many relevant evaluations remain internal to labs.
           </p>
@@ -83,7 +83,7 @@ export default function Bottlenecks() {
       <section className="mt-10">
         <h2 className="text-xl font-semibold mb-3 text-amber-950">Relation to Other Pages</h2>
         <p className="text-gray-700 text-sm">
-          These bottlenecks directly affect progress on several items tracked in the <Link href="/gaps" className="text-blue-600 hover:underline">Gaps & Signposts</Link> page, particularly long-horizon reliability, AI R&D automation, and embodied capabilities. They also shape the scenarios described on the <Link href="/scenarios" className="text-blue-600 hover:underline">Scenarios</Link> page.
+          These bottlenecks directly affect progress on several items tracked in the <Link href="/gaps" className="text-blue-600 hover:underline">Gaps & Signposts</Link> page, particularly long-horizon reliability, AI R&D automation, and embodied capabilities. Recent progress and use cases are summarized on the <Link href="/landscape" className="text-blue-600 hover:underline">Current Landscape</Link> page. They also shape the scenarios described on the <Link href="/scenarios" className="text-blue-600 hover:underline">Scenarios</Link> page.
         </p>
       </section>
 
