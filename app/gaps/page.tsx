@@ -20,7 +20,7 @@ const evidenceCards = [
     evidenceStrength: "Medium",
     keySources: "Lab disclosures, third-party ML engineering agent benchmarks",
     linkedMetrics: "Related to METR Time Horizon",
-    relatedExamples: "Anthropic reported that Claude led 26% of measured internal model R&D work in August 2026 (up from under 1% in February). METR’s Opus 5.5 evaluation concluded the model is unlikely to fully automate AI R&D but is expected to provide slightly higher productivity uplift than Fable 5.1. Public end-to-end demonstrations of novel research autonomy remain rare.",
+    relatedExamples: "Anthropic reported that Claude led 26% of measured internal model R&D work in August 2026 (up from under 1% in February). METR’s Opus 5.5 evaluation concluded the model is unlikely to fully automate AI R&D but is expected to provide slightly higher productivity uplift than Fable 5.1. Amazon has reported agents assisting with large-scale Java application upgrades. Public end-to-end demonstrations of novel research autonomy remain rare.",
     limitations: "Limited public quantitative data on full autonomy. Most evidence is qualitative or from controlled internal settings.",
   },
   {
@@ -42,7 +42,7 @@ const evidenceCards = [
     evidenceStrength: "Medium",
     keySources: "METR evaluations, agent failure-mode studies",
     linkedMetrics: "Related to METR Time Horizon",
-    relatedExamples: "METR noted elevated cheating rates on some longer tasks and that measurements above ~16 hours are unreliable with the current suite. Agent evaluations frequently show error rates rising with task length. Some long-running deployments still report higher intervention rates than short controlled benchmarks.",
+    relatedExamples: "METR noted elevated cheating rates on some longer tasks and that measurements above ~16 hours are unreliable with the current suite. Klarna partially rolled back AI support handling after quality issues, illustrating that high initial automation rates can reverse when reliability is insufficient. Agent evaluations frequently show error rates rising with task length.",
     limitations: "Most rigorous evaluations remain on controlled or self-scoring tasks. Open-ended reliability is harder to measure consistently.",
   },
   {
@@ -53,7 +53,7 @@ const evidenceCards = [
     evidenceStrength: "Low-Medium",
     keySources: "Robotics benchmarks, embodied AI evaluations, real-world deployment reports",
     linkedMetrics: "None currently strong",
-    relatedExamples: "Structured pick-and-place or assembly tasks in labs continue to improve. Unstructured home or industrial tasks still show low success rates in public evaluations. Digital agents remain substantially ahead in generality and reliability on comparable multi-step work.",
+    relatedExamples: "Structured pick-and-place or assembly tasks in labs continue to improve. Unstructured home or industrial tasks still show low success rates in public evaluations. Digital agents remain substantially ahead in generality and reliability on comparable multi-step work. DOE-supported autonomous laboratory projects are early attempts to close parts of this gap.",
     limitations: "Sparse public data at scale. Most results come from controlled lab environments.",
   },
   {
@@ -64,8 +64,8 @@ const evidenceCards = [
     evidenceStrength: "Medium",
     keySources: "FrontierMath, other hard benchmarks, expert evaluations of novelty",
     linkedMetrics: "Hard Unsaturated Benchmarks (Dashboard)",
-    relatedExamples: "Models have solved some previously difficult contest-style or benchmark problems. Verified cases of generating and confirming genuinely new scientific results at scale remain limited. Recent multi-agent systems have proposed hypotheses and experimental designs, but human validation is still required for novel discoveries.",
-    limitations: "Distinguishing genuine discovery from sophisticated pattern matching or memorization remains difficult.",
+    relatedExamples: "OpenAI released 722 mathematics manuscripts in October 2026, some with partial Lean formalizations; three were withdrawn within 24 hours due to errors. Biomni (Stanford) has analyzed large wearable sensor datasets in ~35 minutes and designed cloning protocols later verified experimentally. Co-Scientist has been used for multi-agent hypothesis generation. Verified cases of fully autonomous novel discovery at scale remain limited.",
+    limitations: "Distinguishing genuine discovery from sophisticated pattern matching or memorization remains difficult. Human validation is still required for most novel results.",
   },
 ];
 
@@ -107,6 +107,7 @@ export default function Gaps() {
         <p className="mb-2">Related pages:</p>
         <ul className="list-disc pl-5 space-y-1">
           <li><Link href="/dashboard" className="text-blue-600 hover:underline">Capabilities Dashboard</Link> — quantitative anchors</li>
+          <li><Link href="/landscape" className="text-blue-600 hover:underline">Current Landscape</Link> — recent progress and use cases</li>
           <li><Link href="/scenarios" className="text-blue-600 hover:underline">Scenarios</Link> — longer-term forms that depend on these gaps</li>
           <li><Link href="/bottlenecks" className="text-blue-600 hover:underline">Bottlenecks</Link> — structural constraints affecting several gaps</li>
         </ul>
